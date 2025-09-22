@@ -1,0 +1,42 @@
+* {
+  /* outline: 1px solid red; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+/* responsive Images */
+img {
+  width: 100%;
+}
+
+.design {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+  width: 375px;
+}
+
+.card {
+  width: 350px;
+  background-color: white;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+}
