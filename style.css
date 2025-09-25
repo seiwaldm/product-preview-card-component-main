@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  color: hsl(228, 12%, 48%);
 }
 
 body {
@@ -18,25 +19,61 @@ body {
 
 /* responsive Images */
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .design {
   position: absolute;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 1;
   width: 375px;
 }
 
 .card {
   width: 350px;
   background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card-body {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-h2 {
+.product-name {
   font-family: "Fraunces", serif;
+  color: black;
+  font-size: 2.3em;
+  line-height: 1;
+}
+
+.product-type {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.price-old {
+  text-decoration: line-through;
+}
+
+.price-new {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 2.3em;
+  font-weight: 700;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.cart-btn {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  color: white;
 }
