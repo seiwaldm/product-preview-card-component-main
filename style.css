@@ -98,3 +98,27 @@ img {
   line-height: 1.5;
   font-weight: 500;
 }
+
+.desktop-image {
+  display: none;
+}
+
+.mobile-image {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: flex;
+    width: 600px;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .desktop-image {
+    width: 300px;
+    display: block;
+  }
+}
